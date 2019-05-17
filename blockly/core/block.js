@@ -1130,6 +1130,9 @@ Blockly.Block.prototype.interpolate_ = function(message, args, lastDummyAlign) {
               field = new Blockly.FieldNumber(element['value'],
                   element['min'], element['max'], element['precision']);
               break;
+            case 'field_entityselector':
+              field = new Blockly.FieldEntitySelector(element['angle']);
+              break;
             case 'field_date':
               if (Blockly.FieldDate) {
                 field = new Blockly.FieldDate(element['date']);

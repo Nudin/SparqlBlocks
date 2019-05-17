@@ -17,12 +17,14 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
 
         <xsl:if test="not($bundledLibs)">
           <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         </xsl:if>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.full.js"></script>
         <script src="js/sparqlblocks.min.js"></script>
       </head>
       <body>

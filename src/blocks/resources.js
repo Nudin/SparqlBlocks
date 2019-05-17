@@ -53,7 +53,7 @@ Blocks.block('wikidata_truthy', {
     this.setColour(50);
     this.appendDummyInput()
         .appendField("Property ")
-        .appendField(new Blockly.FieldTextInput(""), "PROPERTY");
+        .appendField(new Blockly.FieldEntitySelector("P31", "property"), "PROPERTY");
     this.setInputsInline(true);
     this.setOutput(true, "Iri");
     this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
@@ -69,7 +69,7 @@ Blocks.block('wikidata_item', {
     this.setColour(70);
     this.appendDummyInput()
         .appendField("Item ")
-        .appendField(new Blockly.FieldTextInput(""), "ITEM");
+        .appendField(new Blockly.FieldEntitySelector("Q5", "item"), "ITEM");
     this.setInputsInline(true);
     this.setOutput(true, "Iri");
     this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
