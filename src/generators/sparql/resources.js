@@ -87,3 +87,8 @@ Sparql.variables_get = function(block) {
   var code = '?' + text_var;
   return [code, Sparql.ORDER_ATOMIC];
 };
+
+Sparql.wikidata_label_service = function(block) {
+  var language = "en";
+  return "SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE]," + language + "\". }";
+};

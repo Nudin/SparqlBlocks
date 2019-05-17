@@ -76,6 +76,11 @@ var flyoutCategory = function(workspace) {
   isBlock.setAttribute('gap', 32);
   xmlList.push(isBlock);
 
+  var lableServiceBlock = document.createElement('block');
+  lableServiceBlock.setAttribute('type', 'wikidata_label_service');
+  lableServiceBlock.setAttribute('gap', 32);
+  xmlList.push(lableServiceBlock);
+
   var iriShown = {};
   var prefixedShown = {};
 

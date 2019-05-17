@@ -309,7 +309,7 @@ var setup = function(mode, workspace, sParameters) {
           },
           do: function(data) {
             data.check.WHERE[0].SUBJECT = {
-              type: ["sparql_prefixed_iri", "wikidata_item", "wikidata_truthy", "wikidata_instanceof", "sparql_iri"]
+              type: ["sparql_prefixed_iri", "wikidata_item", "wikidata_truthy", "wikidata_instanceof", "wikidata_label_service", "sparql_iri"]
             };
           },
           stepWhen: function(event, data) {

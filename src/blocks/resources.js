@@ -210,3 +210,19 @@ Blocks.block('sparql_iri_prop', {
   }
 
 });
+
+Blocks.block('wikidata_label_service', {
+  init: function() {
+    this.setHelpUrl('http://www.w3.org/TR/sparql11-query/#prefNames'); // FIXME
+    this.setColour(80);
+    this.appendDummyInput()
+        .appendField("Label Service");
+    this.setInputsInline(true);
+    this.setNextStatement(true);
+    this.setPreviousStatement(true);
+    this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
+  },
+  onchange: function(e) {
+    Resources.saveResource(this);
+  }
+});
