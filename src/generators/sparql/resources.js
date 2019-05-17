@@ -59,6 +59,12 @@ Sparql.wikidata_truthy = function(block) {
   return codeFromPrefixed(text_prefix, text_local_name);
 };
 
+Sparql.wikidata_instanceof = function(block) {
+  var text_prefix = "wdt";
+  var text_local_name = "P31";
+  return codeFromPrefixed(text_prefix, text_local_name);
+};
+
 Sparql.sparql_iri = function(block) {
   var text_iri = block.getFieldValue('IRI');
   if (text_iri) {
