@@ -7,7 +7,7 @@
     <xml id="toolboxGuide" style="display: none">
       <category name="&#xf106; Query" colour="290">
         <block type="sparql_execution_endpoint_query">
-          <field name="ENDPOINT">http://live.dbpedia.org/sparql</field>
+          <field name="ENDPOINT">https://query.wikidata.org/sparql</field>
           <field name="LIMIT">5</field>
           <value name="WHERE">
             <shadow type="sparql_subject_propertylist">

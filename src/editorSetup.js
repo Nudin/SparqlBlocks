@@ -198,7 +198,7 @@ var setup = function(mode, workspace, sParameters) {
           do: function(data) {
             data.check = {
               type: "sparql_execution_endpoint_query",
-              ENDPOINT: "http://live.dbpedia.org/sparql",
+              ENDPOINT: "https://query.wikidata.org/sparql",
               WHERE: [{
                 type: "sparql_subject_propertylist",
                 SUBJECT: {
@@ -482,7 +482,7 @@ var setup = function(mode, workspace, sParameters) {
           do: function(data) {
             data.check = {
               type: "sparql_execution_endpoint_query",
-              ENDPOINT: "http://live.dbpedia.org/sparql",
+              ENDPOINT: "https://query.wikidata.org/sparql",
               WHERE: [{
                 type: "sparql_subject_propertylist",
                 SUBJECT: {

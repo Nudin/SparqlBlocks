@@ -720,7 +720,7 @@
     </category>
     <category name="&#xf10a; Search" colour="290">
       <block type="sparql_builtin_resources">
-        <field name="ENDPOINT">http://dbpedia.org/sparql</field>
+        <field name="ENDPOINT">https://query.wikidata.org/sparql</field>
         <value name="GRAPH">
           <block type="sparql_iri">
             <field name="IRI">http://dbpedia.org</field>
@@ -741,7 +741,7 @@
         <field name="LIMIT">5</field>
       </block>
       <block type="sparql_builtin_classes">
-        <field name="ENDPOINT">http://dbpedia.org/sparql</field>
+        <field name="ENDPOINT">https://query.wikidata.org/sparql</field>
         <value name="GRAPH">
           <block type="sparql_iri">
             <field name="IRI">http://dbpedia.org</field>
@@ -756,7 +756,7 @@
         <field name="LIMIT">5</field>
       </block>
       <block type="sparql_builtin_properties">
-        <field name="ENDPOINT">http://dbpedia.org/sparql</field>
+        <field name="ENDPOINT">https://query.wikidata.org/sparql</field>
         <value name="GRAPH">
           <block type="sparql_iri">
             <field name="IRI">http://dbpedia.org</field>

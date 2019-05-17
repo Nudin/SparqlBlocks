@@ -45,7 +45,7 @@
           <div class="dialogToDo">
             <div class="blockly-readOnly" blockly-zoom="0.5" style="height: 82px; width: 188px; float:right; display:block; margin: 3px;">
               <block x="0" y="0" type="sparql_execution_endpoint_query_fake">
-                <field name="ENDPOINT">http://live.dbpedia.org/sparql</field>
+                <field name="ENDPOINT">https://query.wikidata.org/sparql</field>
                 <field name="LIMIT">5</field>
                 <value name="WHERE">
                   <shadow type="sparql_subject_propertylist">
