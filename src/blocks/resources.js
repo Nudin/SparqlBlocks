@@ -52,8 +52,24 @@ Blocks.block('wikidata_truthy', {
     this.setHelpUrl('http://www.w3.org/TR/sparql11-query/#prefNames'); // FIXME
     this.setColour(50);
     this.appendDummyInput()
-        .appendField("Property:")
+        .appendField("Property ")
         .appendField(new Blockly.FieldTextInput(""), "PROPERTY");
+    this.setInputsInline(true);
+    this.setOutput(true, "Iri");
+    this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
+  },
+  onchange: function(e) {
+    Resources.saveResource(this);
+  }
+});
+
+Blocks.block('wikidata_item', {
+  init: function() {
+    this.setHelpUrl('http://www.w3.org/TR/sparql11-query/#prefNames'); // FIXME
+    this.setColour(70);
+    this.appendDummyInput()
+        .appendField("Item ")
+        .appendField(new Blockly.FieldTextInput(""), "ITEM");
     this.setInputsInline(true);
     this.setOutput(true, "Iri");
     this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
