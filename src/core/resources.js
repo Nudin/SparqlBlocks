@@ -61,6 +61,11 @@ var flyoutCategory = function(workspace) {
   prefixedEmptyBlock.setAttribute('gap', 32);
   xmlList.push(prefixedEmptyBlock);
 
+  var emptyTruthyBlock = document.createElement('block');
+  emptyTruthyBlock.setAttribute('type', 'wikidata_truthy');
+  emptyTruthyBlock.setAttribute('gap', 32);
+  xmlList.push(emptyTruthyBlock);
+
   var iriShown = {};
   var prefixedShown = {};
 

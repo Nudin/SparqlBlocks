@@ -53,6 +53,12 @@ Sparql.sparql_prefixed_iri = function(block) {
   return codeFromPrefixed(text_prefix, text_local_name);
 };
 
+Sparql.wikidata_truthy = function(block) {
+  var text_prefix = "wdt";
+  var text_local_name = block.getFieldValue('PROPERTY');
+  return codeFromPrefixed(text_prefix, text_local_name);
+};
+
 Sparql.sparql_iri = function(block) {
   var text_iri = block.getFieldValue('IRI');
   if (text_iri) {

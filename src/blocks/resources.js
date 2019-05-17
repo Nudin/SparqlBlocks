@@ -47,6 +47,22 @@ Blocks.block('sparql_prefixed_iri', {
   }
 });
 
+Blocks.block('wikidata_truthy', {
+  init: function() {
+    this.setHelpUrl('http://www.w3.org/TR/sparql11-query/#prefNames'); // FIXME
+    this.setColour(50);
+    this.appendDummyInput()
+        .appendField("Property:")
+        .appendField(new Blockly.FieldTextInput(""), "PROPERTY");
+    this.setInputsInline(true);
+    this.setOutput(true, "Iri");
+    this.setTooltip(Msg.PREFIXED_IRI_TOOLTIP);
+  },
+  onchange: function(e) {
+    Resources.saveResource(this);
+  }
+});
+
 Blocks.block('sparql_prefixed_iri_prop', {
   init: function() {
     this.setHelpUrl('http://www.w3.org/TR/sparql11-query/#prefNames');
