@@ -54,7 +54,7 @@ var execBlock = function(options) {
         // }
         titleAndEndpointInput
             .appendField("from")
-            .appendField(new Blockly.FieldTextInput(""), "ENDPOINT");
+            .appendField("Wikidata");
       }
       if (options.parameters && _.isArray(options.parameters)) {
         for (var i = 0; i < options.parameters.length; i++) {
@@ -197,7 +197,7 @@ var execBlock = function(options) {
           text: "Open Query in YASGUI",
           enabled: true,
           callback: function() {
-            var endpointUri_txt = thisBlock.getFieldValue('ENDPOINT');
+            var endpointUri_txt = "https://query.wikidata.org/sparql";
             var yasguiUrl =
                 "http://yasgui.org/#query=" +
                 encodeURIComponent(thisBlock.sparqlQueryStr) +
@@ -325,7 +325,7 @@ var blockExecQuery_ = function(block, queryStr) {
   if (!resInput) return;
   var resConnection = resInput.connection;
   if (!resConnection) return;
-  var endpointUri_txt = block.getFieldValue('ENDPOINT');
+  var endpointUri_txt = "https://query.wikidata.org/sparql";
   var endpointUri = endpointUri_txt ? encodeURI(endpointUri_txt) : null;
   if (endpointUri != block.endpointUri || queryStr != block.sparqlQueryStr) {
     block.endpointUri = endpointUri;

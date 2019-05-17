@@ -122,7 +122,7 @@ var blockExecQuery_ = function(block, queryStr, extraColumns, resultsHolder) {
     resultsHolder = block.getInput('RESULTS');
   }
   if (!resultsHolder) return;
-  var endpointUri_txt = block.getFieldValue('ENDPOINT');
+  var endpointUri_txt = "https://query.wikidata.org/sparql";
   var endpointUri = endpointUri_txt ? encodeURI(endpointUri_txt) : null;
   if (endpointUri != block.endpointUri || queryStr != block.sparqlQueryStr) {
     block.endpointUri = endpointUri;
