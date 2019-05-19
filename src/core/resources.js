@@ -51,21 +51,6 @@ var flyoutCategory = function(workspace) {
   var resourceList = workspace.resourceList || [];
   var xmlList = [];
 
-  var iriEmptyBlock = document.createElement('block');
-  iriEmptyBlock.setAttribute('type', 'sparql_iri');
-  iriEmptyBlock.setAttribute('gap', 8);
-  xmlList.push(iriEmptyBlock);
-
-  var prefixedEmptyBlock = document.createElement('block');
-  prefixedEmptyBlock.setAttribute('type', 'sparql_prefixed_iri');
-  prefixedEmptyBlock.setAttribute('gap', 32);
-  xmlList.push(prefixedEmptyBlock);
-
-  var emptyTruthyBlock = document.createElement('block');
-  emptyTruthyBlock.setAttribute('type', 'wikidata_truthy');
-  emptyTruthyBlock.setAttribute('gap', 32);
-  xmlList.push(emptyTruthyBlock);
-
   var emptyItemBlock = document.createElement('block');
   emptyItemBlock.setAttribute('type', 'wikidata_item');
   emptyItemBlock.setAttribute('gap', 32);
@@ -73,8 +58,23 @@ var flyoutCategory = function(workspace) {
 
   var isBlock = document.createElement('block');
   isBlock.setAttribute('type', 'wikidata_instanceof');
-  isBlock.setAttribute('gap', 32);
+  isBlock.setAttribute('gap', 8);
   xmlList.push(isBlock);
+
+  var emptyTruthyBlock = document.createElement('block');
+  emptyTruthyBlock.setAttribute('type', 'wikidata_truthy');
+  emptyTruthyBlock.setAttribute('gap', 32);
+  xmlList.push(emptyTruthyBlock);
+
+  var prefixedEmptyBlock = document.createElement('block');
+  prefixedEmptyBlock.setAttribute('type', 'sparql_prefixed_iri');
+  prefixedEmptyBlock.setAttribute('gap', 8);
+  xmlList.push(prefixedEmptyBlock);
+
+  var iriEmptyBlock = document.createElement('block');
+  iriEmptyBlock.setAttribute('type', 'sparql_iri');
+  iriEmptyBlock.setAttribute('gap', 32);
+  xmlList.push(iriEmptyBlock);
 
   var lableServiceBlock = document.createElement('block');
   lableServiceBlock.setAttribute('type', 'wikidata_label_service');
