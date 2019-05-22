@@ -13,7 +13,7 @@
     <html lang="en">
       <head>
         <meta charset="utf-8"/>
-        <title>SparqlBlocks Demo</title>
+        <title>Wikidata Blocky Query</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>

@@ -1,7 +1,7 @@
-# SparqlBlocks
-Using Blockly library for building SPARQL queries with blocks.
+# BlockyQuery
+Using Blockly library for building Wikidata SPARQL queries with blocks, based on [SparqlBlocks](https://github.com/miguel76/SparqlBlocks).
 
-http://sparqlblocks.org/
+https://tools.wmflabs.org/blockyquery/
 
 ## Usage
 
@@ -69,3 +69,10 @@ To build the static files in `./dist` after a change, run gulp.
 gulp
 ```
 
+### Building Blocky
+The package contains a prebuilt modified version of Blocky in `./blockly` if
+you modify blocky you have to rebuild it before building BlockyQuery:
+
+```sh
+./build.py
+```
